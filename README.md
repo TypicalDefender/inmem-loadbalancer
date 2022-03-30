@@ -1,8 +1,7 @@
 Experimental Load Balancer
 ===
 
-
-Super simple, experimental reverse proxy (load balancer) in Golang.
+⚡️ Blazing Fast, Super Simple, Single Node load balancer written in Go
 
 
 ```
