@@ -1,4 +1,4 @@
-Experimental Load Balancer
+In-Memory Experimental Load Balancer
 ===
 
 ⚡️ Blazing Fast, Super Simple, Single Node load balancer written in Go
