@@ -64,7 +64,14 @@ func cli() {
 			} else {
 				fmt.Println("this balancing strategy does not support edits.")
 			}
+		case CMD_TopologyTest:
+			var reqId string
 
+			fmt.Print("       Request ID: ")
+			fmt.Scanf("%s", &reqId)
+
+			backend := lb.strategy.GetNextBackend(IncomingReq{reqId: reqId})
+			fmt.Printf("request: %s goes to backend: %s\n", reqId, backend)
 		case CMD_TopologyList:
 			lb.strategy.PrintTopology()
 		default:
